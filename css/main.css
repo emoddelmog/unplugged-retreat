@@ -107,7 +107,7 @@ html  {
 body  {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  color: white;
   text-align: left;
 }
 
@@ -132,7 +132,7 @@ h1  {
 h2  {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 1.90em;
+  font-size: 2.15em;
 }
 
 h3,
@@ -154,7 +154,7 @@ img  {
 }
 
 figure  {
-
+  margin: 0;
 }
 
 address  {
@@ -198,6 +198,14 @@ header .content-wrapper  {
 
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider  {
   background: #3a3a3a;
   width: 100%;
@@ -222,6 +230,10 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
 
+}
+
+header nav ul li  {
+	font-size: 1.125em;
 }
 
 footer  {
@@ -259,6 +271,34 @@ footer .social-icons p  {
 
 footer .copyright  {
   margin: 20px 0;
+  text-align: center;
+}
+
+
+
+ /* -----------------Mobile Styles - Homepage --------------*/
+
+/* Hero area */
+
+.hero-area  {
+  background: url('../img/bridge.jpg') center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+
+ /* Aside */
+
+aside  {
+  background: #336633;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
 }
 
 aside .form {
@@ -287,33 +327,12 @@ input[type=button] {
   text-transform: uppercase;
 }
 
- /* -----------------Mobile Styles - Homepage --------------*/
-
-/* Hero area */
-
-.hero-area  {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-
-}
-
-
- /* Aside */
-
-aside  {
-  background: #336633;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
 
  /* Features*/
 
 .features  {
+  background: url('../img/forest-night.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -354,6 +373,7 @@ aside  {
 
 .reviews h2  {
   margin-bottom: 40px;
+  line-height: 1;
  
 }
 
@@ -379,15 +399,15 @@ aside  {
 
 .contact-section {
   background-color: #669933;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
 .contact-content p {
-	margin: 0;
+  margin: 0;
 }
 
 
@@ -532,21 +552,35 @@ aside  {
   
 	}
 
+	header figure  {
+		width: 30%;
+	}
+
 	header nav  {
-		width: 20%;
+		width: 30%;
 
 	}
 
 	header nav ul  {
 		justify-content: space-between;
 
-
 	}
+
 	.header-divider  {
 		display: none;
 	}
 
 	/*  Hero Area  */
+    
+    .hero-area  {
+    	min-height: 600px;
+    }
+
+    .hero-area h1  {
+    	font-size: 3em;
+    	line-height: 1;
+    	margin: 0;
+    }
 
 	/*  Aside  */
 	aside .content-wrapper  {
@@ -564,6 +598,9 @@ aside  {
 
 	/*  Features  */
 
+	.features h2  {
+		margin-bottom: 20px;
+	}
 
 	.features article  {
 		display: flex;
@@ -586,8 +623,19 @@ aside  {
 
 	}
 
+	.reviews h2  {
+		width: 85%;
+	}
+
+	.reviews article figure,  
 	.reviews article div  {
-		width: 50%;
+		width: 49%;
+		align-self: center;
+	}
+
+	.reviews h3  {
+		width: 75%;
+		margin: 0;
 	}
 
 	/*  Footer  */
@@ -600,12 +648,22 @@ aside  {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-direction: row;		
 
 	}
 
 	footer .contact  {
 		margin-bottom: 0;
 
+	}
+
+	footer h4  {
+		font-size: 1.5em;
+		margin-bottom: 40px;
+	}
+
+	footer p  {
+		line-height: 1.285;
 	}
 
 	footer .copyright   {
