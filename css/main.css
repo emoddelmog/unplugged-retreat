@@ -139,12 +139,12 @@ h3,
 h4  {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
-  font-size: 1.15em;
+  font-size: 1.125em;
   font-weight: 500;
 }
 
 p  {
-  font-size: .85em;
+  font-size: .875em;
 
 }
 
@@ -237,6 +237,7 @@ header nav ul li  {
 }
 
 footer  {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -263,15 +264,23 @@ footer .social-icons  {
 
 
 footer .social-icons p  {
+  background: #336633;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
 
+footer .social-icons p i  {
+	font-size: 1.4em;
+}
+
 footer .copyright  {
   margin: 20px 0;
-  text-align: center;
+
 }
 
 
@@ -707,6 +716,11 @@ input[type=button] {
 	footer .copyright   {
 		width: 100%;
 	
+	}
+
+	footer .social-icons  {
+		width: 12.5em;
+		justify-content: space-between;
 	}
 /* =======================================================================
 ===================
